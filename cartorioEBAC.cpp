@@ -121,7 +121,8 @@ int main()
 		printf("Escolha a opção desejada do menu:\n\n");
 		printf("\t1 - Registrar nomes:\n");
 		printf("\t2 - Consultar nomes:\n");
-		printf("\t3 - Deletar nomes:\n\n");
+		printf("\t3 - Deletar nomes:\n");
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção:");
 	
 		scanf("%d", &opcao); //Armazena os dados inseridos pelo usuário na variável opção.
@@ -143,6 +144,11 @@ int main()
 			deletar();
 			system("pause");
 			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0; //Encerra o programa.
+			break; 
 		
 			default:	
 			printf("Essa opção não está disponível!\n");
@@ -150,7 +156,7 @@ int main()
 		}//Fim da seleção.
 	}
 
-printf("Esse software é de livre uso da comunidade EBAC.")
+printf("Esse software é de livre uso da comunidade EBAC.");
 }
 
 
